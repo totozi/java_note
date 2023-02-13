@@ -1,8 +1,8 @@
-package jungsuk.ch12.example;
+package jungsuk.generics_enum_annotation.example;
 
 import java.util.ArrayList;
 
-public class Ex12_2 {
+public class GenericsEx_2 {
 
     // 타입 변수
     // 클래스를 작성할 때, Object 타입 대신 타입변수(E)를 선언해서 사용

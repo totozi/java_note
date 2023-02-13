@@ -1,9 +1,8 @@
-package jungsuk.ch12.example;
+package jungsuk.generics_enum_annotation.example;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
-public class Ex12_1 {
+public class GenericsEx_1 {
 
     // Generics란?
     // 컴파일시 타입을 체크해주는 기능
