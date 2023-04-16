@@ -1,5 +1,8 @@
 package jungsuk.lambda;
 
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 public class LambdaEx_1 {
     /**
      * Lambda Expression
@@ -28,6 +31,14 @@ public class LambdaEx_1 {
      * - 람다식을 다루기 위한 참조변수가 필요. 참조변수의 타입은?
      */
 
+    private String getDefaultValue (String str) {
+        Pattern pattern = Pattern.compile("(\\b특정단어\\b)(.*?)(\\b특정단어\\b)");
+        Matcher matcher = pattern.matcher(str);
+        if(matcher.find()){    // 정규식과 매칭되는 값이 있으면
+            return matcher.group(2).trim();        // 특정 단어 사이의 값을 추출한다
+        }
+        return null;
+    }
     public static void main(String[] args) {
 
 
@@ -64,8 +75,6 @@ public class LambdaEx_1 {
         MyFunction f  = () -> System.out.println("f3.run()");
         return f;
     }
-
-
 
 }
 
